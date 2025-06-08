@@ -1,0 +1,65 @@
+{
+    "top_hours": "Lun - Vie (9AM - 6PM)",
+    "nav_home": "Inicio",
+    "nav_services": "Servicios",
+    "nav_projects": "Proyectos",
+    "nav_about": "Nosotros",
+    "nav_contact": "Contacto",
+    "btn_quote": "Cotiza tu proyecto",
+    "hero_title_static": "Soluciones tecnológicas",
+    "hero_keywords": "modernas, seguras, inteligentes, eficientes y escalables",
+    "hero_title_dynamic": "para empresas",
+    "hero_subtitle": "En Apexlict desarrollamos software a medida para potenciar tu negocio.",
+    "btn_services": "Ver servicios",
+    "btn_contact": "Contáctanos",
+    "testimonials_title": "Testimonios",
+    "testimonial_1": "“ Confiamos en Apexlict y superaron todas nuestras expectativas. ”",
+    "testimonial_2": "“ Un equipo comprometido que realmente entiende nuestras necesidades. ”",
+    "testimonial_3": "“ El soporte técnico más eficiente y humano que hemos experimentado. ”",
+    "services_title": "Nuestros Servicios",
+    "services_subtitle": "Soluciones integrales con tecnología de vanguardia.",
+    "footer_desc": "Creamos soluciones tecnológicas profesionales adaptadas a tu empresa.",
+    "footer_company": "Empresa",
+    "footer_about": "Sobre Nosotros",
+    "footer_careers": "Trabaja con Nosotros",
+    "footer_contact": "Contacto",
+    "footer_resources": "Recursos",
+    "footer_platform": "Plataformas",
+    "footer_legal": "Legal",
+    "footer_terms": "Términos de uso",
+    "footer_privacy": "Política de privacidad",
+    "footer_rights": "Todos los derechos reservados.",
+    "services": [
+        {
+            "title": "Desarrollo de Software",
+            "text": "Aplicaciones a medida para optimizar tus procesos."
+        },
+        {
+            "title": "Paneles Inteligentes",
+            "text": "Dashboards interactivos con métricas clave."
+        },
+        {
+            "title": "Infraestructura en la Nube",
+            "text": "Alta disponibilidad y escalabilidad para tus apps."
+        },
+        {
+            "title": "Integraciones",
+            "text": "Conectamos tus sistemas con APIs, ERPs, CRMs."
+        },
+        {
+            "title": "Automatización con IA",
+            "text": "Soluciones inteligentes para ahorrar tiempo."
+        },
+        {
+            "title": "Soporte Técnico",
+            "text": "Acompañamiento continuo para tu solución."
+        }
+    ],
+    "typewriterWords": [
+        "moderno",
+        "inteligente",
+        "seguro",
+        "eficiente",
+        "escalable"
+    ]
+}

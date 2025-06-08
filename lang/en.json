@@ -1,0 +1,65 @@
+{
+    "top_hours": "Mon - Fri (9AM - 6PM)",
+    "nav_home": "Home",
+    "nav_services": "Services",
+    "nav_projects": "Projects",
+    "nav_about": "About Us",
+    "nav_contact": "Contact",
+    "btn_quote": "Get a Quote",
+    "hero_title_static": "Technological solutions",
+    "hero_keywords": "modern, secure, intelligent, efficient and scalable",
+    "hero_title_dynamic": "for companies",
+    "hero_subtitle": "At Apexlict, we develop custom software to boost your business.",
+    "btn_services": "See Services",
+    "btn_contact": "Contact Us",
+    "services_title": "Our Services",
+    "services_subtitle": "Integrated solutions with cutting-edge technology.",
+    "testimonials_title": "Testimonials",
+    "testimonial_1": "“ We trusted Apexlict, and they exceeded all our expectations. ”",
+    "testimonial_2": "“ A committed team that truly understands our needs. ”",
+    "testimonial_3": "“ The most efficient and human technical support we've experienced. ”",
+    "footer_desc": "We create professional tech solutions tailored to your business.",
+    "footer_company": "Company",
+    "footer_about": "About Us",
+    "footer_careers": "Careers",
+    "footer_contact": "Contact",
+    "footer_resources": "Resources",
+    "footer_platform": "Platform",
+    "footer_legal": "Legal",
+    "footer_terms": "Terms of use",
+    "footer_privacy": "Privacy policy",
+    "footer_rights": "All rights reserved.",
+    "services": [
+        {
+            "title": "Software Development",
+            "text": "Custom applications to optimize your processes."
+        },
+        {
+            "title": "Smart Dashboards",
+            "text": "Interactive dashboards with key metrics."
+        },
+        {
+            "title": "Cloud Infrastructure",
+            "text": "High availability and scalability for your apps."
+        },
+        {
+            "title": "Integrations",
+            "text": "We connect your systems with APIs, ERPs, CRMs."
+        },
+        {
+            "title": "AI Automation",
+            "text": "Smart solutions to save time."
+        },
+        {
+            "title": "Technical Support",
+            "text": "Ongoing support for your solution."
+        }
+    ],
+    "typewriterWords": [
+        "modern",
+        "smart",
+        "secure",
+        "efficient",
+        "scalable"
+    ]
+}
