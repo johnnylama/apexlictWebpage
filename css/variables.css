@@ -1,0 +1,385 @@
+:root {
+    --card-bg: #ffffff;
+    --text-color: #000000;
+    --card-border-radius: 14px;
+    --card-hover-shadow: rgba(0, 0, 0, 0.15);
+    --card-border: rgba(0, 0, 0, 0.05);
+    --primary-accent: #0077ff;
+    --icon-color: #0077ff;
+    --icon-bg: rgba(0, 119, 255, 0.08);
+    --navbar-bg: rgba(255, 255, 255, 0.6);
+    --navbar-color: #000;
+    --navbar-border: rgba(0, 0, 0, 0.1);
+    --section-bg: #f8f9fa;
+    /* mismo que bg-light de Bootstrap */
+    --text-muted-color: #6c757d;
+    --testimonial-bg: #f0f4f8;
+    
+}
+
+[data-theme="dark"] {
+    --testimonial-bg: #0c2b2e;
+    --section-bg: #121212;
+    --text-muted-color: #aaaaaa;
+    --card-bg: #1a1a1a;
+    --text-color: #ffffff;
+    --card-hover-shadow: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --primary-accent: #66aaff;
+    --icon-color: #66aaff;
+    --icon-bg: rgba(102, 170, 255, 0.1);
+    --navbar-bg: rgba(0, 0, 0, 0.6);
+    --navbar-color: #fff;
+    --navbar-border: rgba(255, 255, 255, 0.1);
+}
+
+/* ─────── Global ─────── */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--card-bg);
+}
+
+/* ─────── Top Header ─────── */
+.top-header {
+    position: relative;
+    z-index: 1000;
+    background-color: #000;
+    color: white;
+}
+
+/* ─────── Navbar ─────── */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--navbar-bg);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--navbar-border);
+    z-index: 999;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn,
+.navbar select {
+    color: var(--navbar-color) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    opacity: 0.85;
+}
+
+/* Desktop fix para top-header */
+@media (min-width: 992px) {
+    .navbar {
+        top: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        background-color: var(--navbar-bg);
+        backdrop-filter: blur(6px);
+    }
+}
+
+/* ─────── Hero Section ─────── */
+.hero-section {
+    background-image: url('../images/hero_background.jpg');
+    background-color: var(--primary-accent);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.4s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* ─────── Typing Effect ─────── */
+.highlight-word {
+    color: var(--primary-accent);
+    font-weight: bold;
+    border-right: 2px solid white;
+    padding-right: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* ─────── Cards ─────── */
+.card-glass {
+    background: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-glass:hover {
+    box-shadow: 0 8px 20px var(--card-hover-shadow);
+    transform: translateY(-4px);
+}
+
+.card-glass .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: var(--icon-bg);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.card-glass .bi {
+    font-size: 1.5rem;
+    color: var(--icon-color);
+}
+
+/* ─────── Responsive Navbar ─────── */
+@media (max-width: 991.98px) {
+    #mainNavbar .navbar-collapse {
+        background-color: var(--navbar-bg);
+        backdrop-filter: blur(8px);
+        border-radius: 0 0 1rem 1rem;
+        padding: 1rem;
+    }
+
+    #mainNavbar .nav-link {
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    [data-theme="dark"] #mainNavbar .nav-link {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    [data-theme="light"] #mainNavbar .nav-link {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    #mainNavbar .btn,
+    #mainNavbar select {
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    #mainNavbar .btn {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+[data-i18n="hero_keywords"] {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+}
+
+/* Fondo dinámico para la sección de servicios */
+.section-servicios {
+    background-color: var(--section-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+/* Textos internos */
+.section-servicios h2,
+.section-servicios p,
+.section-servicios .card p,
+.section-servicios .card h5 {
+    color: var(--text-color);
+}
+
+/* Clase para asegurar contraste de subtítulos */
+.section-servicios .text-muted {
+    color: var(--text-muted-color);
+}
+
+/* ─────── Testimonials ─────── */
+.testimonials-section {
+    background-color: var(--testimonial-bg);
+    color: var(--text-color);
+}
+
+.testimonial-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.brand-logo {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+.footer-section {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-top: 1px solid var(--card-border);
+}
+
+.footer-section a {
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: var(--primary-accent);
+}
+/* Mejorar contraste de text-muted en dark mode */
+[data-theme="dark"] .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="light"] .text-muted {
+  color: #6c757d !important;
+}
+
+/*team-section*/
+/* Fondo dinámico para la sección de servicios */
+.team-section {
+    background-color: var(--section-bg) !important;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+/* Textos internos */
+.team-section h2,
+.team-section p,
+.team-section .card p,
+.team-section .card h5 {
+    color: var(--text-color);
+}
+
+/* Clase para asegurar contraste de subtítulos */
+.team-section .text-muted {
+    color: var(--text-muted-color);
+}
+
+/*END - team-section*/
+/* Estilos del carrusel */
+/* Carousel */
+.team-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tarjeta */
+.team-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 35rem;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Flechas personalizadas */
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.owl-nav button.owl-prev {
+  left: -1.5rem;
+}
+.owl-nav button.owl-next {
+  right: -1.5rem;
+}
+.owl-nav button:hover {
+  background: rgba(0,0,0,0.6);
+}
+.owl-nav button .bi {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Asegura que el contenedor sea posición relativa */
+.team-carousel.owl-carousel {
+  position: relative;
+}
+
+/* Estilo base de las flechas */
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+/* Icono */
+.arrow i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Hover */
+.arrow:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+/* Posición absoluta de cada flecha */
+.owl-nav .owl-prev {
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-nav .owl-next {
+  position: absolute;
+  right: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-stage-outer{
+    padding-top: 15px;
+}
+
+

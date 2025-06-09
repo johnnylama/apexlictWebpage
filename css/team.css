@@ -1,0 +1,59 @@
+@import 'variables.css';
+
+/* Carousel base (Owl/o Bootstrap) */
+.team-carousel.owl-carousel { position: relative; }
+.team-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Tarjeta */
+.team-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 14px;
+  transition: transform .3s, box-shadow .3s;
+  max-width: 18rem;
+  margin: 0 auto;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* Flechas (Owl) */
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  border: none;
+  width: 3rem; height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-nav .owl-prev { left: -1.5rem; }
+.owl-nav .owl-next { right: -1.5rem; }
+.owl-nav button:hover { background: rgba(0,0,0,0.6); }
+.owl-nav button i { color: #fff; font-size: 1.5rem; }
+
+/* Si usas Bootstrap Carousel */
+#teamCarousel .carousel-control-prev,
+#teamCarousel .carousel-control-next {
+  width: 3rem; height: 3rem;
+}
+#teamCarousel .carousel-control-prev-icon,
+#teamCarousel .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  background-size: 50% 50%;
+}
+#teamCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#teamCarousel .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.7);
+}

@@ -1,0 +1,13 @@
+@import 'variables.css';
+
+.footer-section {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-top: 1px solid var(--card-border);
+}
+.footer-section a {
+  transition: color .2s ease;
+}
+.footer-section a:hover {
+  color: var(--primary-accent);
+}

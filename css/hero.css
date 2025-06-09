@@ -1,0 +1,22 @@
+@import 'variables.css';
+
+.hero-section {
+  background: var(--primary-accent) url('../images/hero_background.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.hero-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.highlight-word {
+  color: var(--primary-accent);
+  font-weight: bold;
+  border-right: 2px solid #fff;
+  padding-right: 6px;
+}

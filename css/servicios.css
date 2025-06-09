@@ -1,0 +1,16 @@
+@import 'variables.css';
+
+.section-servicios {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  transition: background-color .3s;
+}
+.section-servicios h2,
+.section-servicios p,
+.section-servicios .card h5,
+.section-servicios .card p {
+  color: var(--text-color);
+}
+.section-servicios .text-muted {
+  color: var(--text-muted-color);
+}

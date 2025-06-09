@@ -29,6 +29,14 @@
     "footer_terms": "Terms of use",
     "footer_privacy": "Privacy policy",
     "footer_rights": "All rights reserved.",
+    "team_title": "Our Team",
+    "team_description": "We are a team of professionals committed to constant growth and excellence in service.",
+    "team_1_name": "Roberto Lama",
+    "team_1_role": "Backend Developer",
+    "team_2_name": "Mabel Rodas",
+    "team_2_role": "UX/UI Designer",
+    "team_3_name": "Johnny Lama",
+    "team_3_role": "Tech Lead",
     "services": [
         {
             "title": "Software Development",
